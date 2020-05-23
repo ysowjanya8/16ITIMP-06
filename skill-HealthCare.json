@@ -1,0 +1,999 @@
+{
+  "intents": [
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Kia ora"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Night"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hai"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "precautions",
+      "examples": [
+        {
+          "text": "cover your nose and mouth with mask"
+        },
+        {
+          "text": "maintain at least 3 meters distance from others"
+        },
+        {
+          "text": "sanitize your hands frequently"
+        },
+        {
+          "text": "maintain cleanliness at your home"
+        },
+        {
+          "text": "take healthy diet"
+        },
+        {
+          "text": "wash your hands frequently"
+        },
+        {
+          "text": "I'd like to know some precautions"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodbye",
+      "examples": [
+        {
+          "text": "Bye-bye!"
+        },
+        {
+          "text": "See you soon!"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "Have a nice Day!"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Covid-19",
+      "examples": [
+        {
+          "text": "what are the precautions"
+        },
+        {
+          "text": "I'd like to know covid-19 symptoms"
+        },
+        {
+          "text": "What are the corona symptoms"
+        },
+        {
+          "text": "What are the Covid-19 symptoms"
+        },
+        {
+          "text": "What is COVID-19"
+        },
+        {
+          "text": "what is corona"
+        },
+        {
+          "text": "what are the precautions need to follow"
+        },
+        {
+          "text": "what are the precautionary measures to avoid corona"
+        },
+        {
+          "text": "how to avoid corona"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thank_you",
+      "examples": [
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "Thanx"
+        },
+        {
+          "text": "Cheers!"
+        },
+        {
+          "text": "Nice manners!"
+        },
+        {
+          "text": "Thx"
+        },
+        {
+          "text": "Anytime. That's what I'm here for"
+        },
+        {
+          "text": "It's my pleasure to help"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "medicine_recommendations",
+      "examples": [
+        {
+          "text": "for cancer"
+        },
+        {
+          "text": "for heart related problems"
+        },
+        {
+          "text": "for controlling sugar"
+        },
+        {
+          "text": "for severe emergency"
+        },
+        {
+          "text": "for skin problems"
+        },
+        {
+          "text": "for covid-19 symptoms"
+        },
+        {
+          "text": "for kidney dialysis"
+        },
+        {
+          "text": "for headache"
+        },
+        {
+          "text": "for bodypains"
+        },
+        {
+          "text": "for cold and cough"
+        },
+        {
+          "text": "for fever"
+        },
+        {
+          "text": "for chronic diseases"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "dietary_plan",
+      "examples": [
+        {
+          "text": "Can you suggest some diet plan"
+        },
+        {
+          "text": "I'd like to know the diet to follow"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "illness_checker",
+      "examples": [
+        {
+          "text": "Are you suffering with cold and cough?"
+        },
+        {
+          "text": "Are you feeling unwell with shortness of breath?"
+        },
+        {
+          "text": "Are you feeling unwell with only fever?"
+        },
+        {
+          "text": "Are you suffering with headache?"
+        }
+      ],
+      "description": "checks illness"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "illness",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "body pains",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "headache",
+          "synonyms": [
+            "pain",
+            "ache"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cough",
+          "synonyms": [
+            "Sore throat ",
+            "coughing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cold",
+          "synonyms": [
+            "Stuffy nose",
+            "Runny nose",
+            "sneezing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fever",
+          "synonyms": [
+            "temperature",
+            "excessive sweating",
+            "hot skin",
+            "Temperature greater than 100.4 F"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "corona",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "covid-19def",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "symptoms",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "precautionary_measures",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "corona-def",
+          "synonyms": [
+            "definition",
+            "covid-19 definition",
+            "corona definition"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "diet",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "fruits",
+          "synonyms": [
+            "Mosambi",
+            "Apple",
+            "Pomegranate",
+            "grapes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "non veg",
+          "synonyms": [
+            "chicken",
+            "mutton",
+            "fish",
+            "egg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "liquids",
+          "synonyms": [
+            "lemon water",
+            "luke warm ginger water",
+            "ragi flour drink",
+            "sabja water"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "solids",
+          "synonyms": [
+            "roti",
+            "chapati",
+            "dal rice"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vegetables",
+          "synonyms": [
+            "keera",
+            "carrot",
+            "tomato",
+            "cabbage",
+            "cauliflower",
+            "Brinjal",
+            "okra"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "India",
+          "synonyms": [
+            "Hyderabad",
+            "Mumbai",
+            "Chennai",
+            "Delhi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Canada",
+          "synonyms": [
+            "Calgary",
+            "Toronto",
+            "vancouver",
+            "Montreal"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1590229774068",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1590229823470",
+      "previous_sibling": "slot_5_1590230259116"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1590229774068",
+      "variable": "$diet",
+      "dialog_node": "slot_5_1590230259116"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your health problem?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1590220660359",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1590220660377",
+      "previous_sibling": "handler_10_1590220660377"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1590220660359",
+      "context": {
+        "illness": "@illness"
+      },
+      "conditions": "@illness",
+      "event_name": "input",
+      "dialog_node": "handler_10_1590220660377"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbyes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bye. \nSTAY HOME-STAY SAFE From CORONA"
+              },
+              {
+                "text": "Bye-Bye!!       \nSTAY HOME-STAY SAFE From CORONA"
+              },
+              {
+                "text": "Goodbye.\nSTAY HOME-STAY SAFE From CORONA"
+              },
+              {
+                "text": "Nice talking to you today.\nSTAY HOME-STAY SAFE From CORONA"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590227654186",
+      "conditions": "#goodbye",
+      "dialog_node": "node_4_1590227959407",
+      "previous_sibling": "node_9_1590227856228"
+    },
+    {
+      "type": "standard",
+      "title": "Thank you",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I aim to please."
+              },
+              {
+                "text": "You're welcome. Please let me know if you need anything else."
+              },
+              {
+                "text": "My pleasure."
+              },
+              {
+                "text": "No problem. Let me know if there is anything else I can help with."
+              },
+              {
+                "text": "Cheers!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590227654186",
+      "conditions": "#thank_you",
+      "dialog_node": "node_9_1590227856228"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Other Names",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you, $name. How can I help you? You can take my help for having basic medication for general health issues, doctors appointment, and to know COVID-19 symptoms"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text.substring(0, 1).toUpperCase() + input.text.substring(1) ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1590200807182",
+      "previous_sibling": "node_6_1590200563436"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Sys-Person Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you $name. How can i help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "@sys-person"
+      },
+      "conditions": "@sys-person",
+      "dialog_node": "node_6_1590200563436"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1590202181775",
+      "variable": "$illness",
+      "dialog_node": "slot_3_1590220660359",
+      "previous_sibling": "handler_1_1590220659518"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I would suggest Paracetomol for fever"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1590202181775",
+      "conditions": "$illness==\"fever\"",
+      "dialog_node": "response_5_1590221252686",
+      "previous_sibling": "response_5_1590209117070"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I would suggest Dextromethorphan syrup for cold and cough"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590202181775",
+      "context": {},
+      "conditions": "$illness==\"cough\"",
+      "dialog_node": "response_5_1590209117070",
+      "previous_sibling": "slot_3_1590220660359"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Kindly consult doctor for better medication"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1590202181775",
+      "conditions": "true",
+      "dialog_node": "response_6_1590226459008",
+      "previous_sibling": "response_5_1590225193456"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I would suggest crocin, or aspirin, or ibuprofen medicine for headache pain relief"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1590202181775",
+      "conditions": "$illness==\"headache\"",
+      "dialog_node": "response_7_1590224889126",
+      "previous_sibling": "response_5_1590221252686"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I would suggest to take Ibuprofen or Naproxen medicine for body pains"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1590202181775",
+      "conditions": "$illness==\"body pains\"",
+      "dialog_node": "response_7_1590225094147",
+      "previous_sibling": "response_7_1590224889126"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I would suggest Phenylephrine medicine for cold"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1590202181775",
+      "conditions": "$illness==\"cold\"",
+      "dialog_node": "response_5_1590225193456",
+      "previous_sibling": "response_7_1590225094147"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1590202181775",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1590220659518"
+    },
+    {
+      "type": "standard",
+      "title": "covid-19def",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "COVID-19 is a disease caused by a new strain of coronavirus. 'CO' stands for corona, 'VI' for virus, and 'D' for disease. \nCORONA is a respiratory virus which spreads to others easily through droplets of saliva, cough, sneeze."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1590232166097",
+      "conditions": "@corona:corona-def || @corona:covid-19def",
+      "dialog_node": "node_7_1590234996595",
+      "previous_sibling": "node_9_1590233946607"
+    },
+    {
+      "type": "standard",
+      "title": "precautions_measures",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "To avoid Corona, take some precautionary measures such as \n1) WASH hands often, \n2) Don’t touch your eyes, nose or mouth.\n3) Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.\n4)Maintain a safe distance from anyone who is coughing or sneezing.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1590232166097",
+      "conditions": "true",
+      "dialog_node": "node_5_1590236301094",
+      "previous_sibling": "node_7_1590234996595"
+    },
+    {
+      "type": "standard",
+      "title": "symptoms",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Corona Virus Symptoms are: Fever,  dry cough, breathing problem, body pains"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1590232166097",
+      "conditions": "@corona:symptoms",
+      "dialog_node": "node_9_1590233946607"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Avoid handling food or any other household things if there is a risk of spreading the disease."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1590230259116",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1590231796083",
+      "previous_sibling": "handler_6_1590231410369"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "I suggest properly cooked and mashed Potatoes, Carrots, Ashguard, and Carrots"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1590230259116",
+      "conditions": "$diet==\"vegetables\"",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1590231410369",
+      "previous_sibling": "handler_5_1590231302424"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "I suggest liquid food such as Coconut water, Ginger tea, Herbal tea, and buttermilk."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1590230259116",
+      "conditions": "$diet==\"liquids\"",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1590230840193",
+      "previous_sibling": "handler_9_1590230685195"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "I suggest dried fruits such as apricots, figs, and prunes, typically contain the highest levels of fiber. In addition to this, it is better to take Fruits like apples, oranges, watermelon, pineapple, kiwi which are rich in vitamin C"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1590230259116",
+      "conditions": "$diet==\"fruits\"",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1590231302424",
+      "previous_sibling": "handler_3_1590231042924"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "I suggest solid food such as bananas, rice, applesauce, boiled potatoes and toast"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1590230259116",
+      "conditions": "$diet:solids",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1590230685195",
+      "previous_sibling": "handler_10_1590230259122"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Choose the type of food: solids or liquids or non veg or fruits or vegetables"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1590230259116",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1590230259122",
+      "previous_sibling": "handler_5_1590230259122"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "I suggest chicken soup, poultry and fish food"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1590230259116",
+      "conditions": "$diet==\"non veg\"",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1590231042924",
+      "previous_sibling": "handler_1_1590230840193"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1590230259116",
+      "context": {
+        "diet": "@diet"
+      },
+      "conditions": "@diet",
+      "event_name": "input",
+      "dialog_node": "handler_5_1590230259122"
+    },
+    {
+      "type": "folder",
+      "title": "chitchat",
+      "dialog_node": "node_2_1590227654186",
+      "previous_sibling": "node_8_1590229774068"
+    },
+    {
+      "type": "standard",
+      "title": "covid",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "corona-def": "#covid-19def",
+        "corona-pre": "#precautions_measures",
+        "corona-symptoms": "#symptoms"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@corona",
+      "dialog_node": "node_6_1590232166097",
+      "previous_sibling": "node_5_1590226738852"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1590227654186",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "medicine recommendation",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#medicine_recommendations",
+      "dialog_node": "node_2_1590202181775",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Precautions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Never use rubbing alcohol or cold baths to bring the fever down"
+              },
+              {
+                "text": "Avoid Caffeinated beverages"
+              },
+              {
+                "text": "Avoid  hard or jagged foods."
+              },
+              {
+                "text": "Avoid Processed foods."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#precautions",
+      "dialog_node": "node_5_1590226738852",
+      "previous_sibling": "node_2_1590202181775"
+    },
+    {
+      "type": "frame",
+      "title": "Diet",
+      "output": {
+        "generic": []
+      },
+      "context": {},
+      "conditions": "#dietary_plan",
+      "dialog_node": "node_8_1590229774068",
+      "previous_sibling": "node_6_1590232166097"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I'm a Healthcare assistant, here to assist you with your questions about general health issues such as cold, cough, fever and headache. What name can I call you by?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "HealthCare",
+  "language": "en",
+  "description": ""
+}
